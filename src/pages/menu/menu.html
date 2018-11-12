@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar color="bb">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title align=" center">เมนูหลัก</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content align='center' style="background-color:#A6FFCB">
+  <div style="margin-top: 20px">
+    <img src="assets/imgs/MENU.svg">
+  </div>
+  <div style="margin-top: 20px">
+    <ion-grid class="grid-basic-page">
+      <ion-row>
+        <ion-col>
+          <ion-img style="width: 320px; height: 105px;" (click)="imgfind()" src="assets/imgs/Qr1.svg"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div style="margin-top: 20px">
+    <ion-grid class="grid-basic-page">
+      <ion-row>
+        <ion-col>
+          <ion-img style="width: 320px; height: 105px;" (click)="imgscan()" src="assets/imgs/Qr2.svg"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div style="margin-top: 20px">
+    <ion-grid class="grid-basic-page">
+      <ion-row>
+        <ion-col>
+          <ion-img style="width: 320px; height: 105px;" (click)="imgAdd()" src="assets/imgs/AddCouse.png"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div id='topButtons'>
+    <button ion-button style="margin-top: 20px" class="btn" (click)="pushPageHome()" style="background-color: rgb(32, 155, 138)">
+      <ion-icon name="md-log-out"></ion-icon>&nbsp;
+      ออกจากระบบ
+    </button>
+  </div>
+</ion-content>

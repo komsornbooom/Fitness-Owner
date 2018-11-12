@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 68">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f18b8b;
+        font-size: 50px;
+        font-family: KristenITC-Regular, Kristen ITC;
+        letter-spacing: 0.005em;
+        text-decoration: underline;
+      }
+    </style>
+  </defs>
+  <text id="MENU" class="cls-1"><tspan x="75.283" y="51">MENU</tspan></text>
+</svg>

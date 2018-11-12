@@ -1,0 +1,42 @@
+<!--
+  Generated template for the FindmemberPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="bb">
+    <ion-title>สถิติผู้เข้าใช้งาน</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding align='center' class="bg">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="Pull to refresh" refreshingSpinner="circles"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-item style="background-color: rgb(36, 121, 121)" class="font" class="ra">
+    <ion-label>วันที่</ion-label>
+    <ion-icon name="md-calendar"></ion-icon>
+    <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="dateStart"></ion-datetime>
+  </ion-item>
+  <ion-item style="background-color: rgb(36, 121, 121)" class="font" class="ra">
+    <ion-label>กับวันที่</ion-label>
+    <ion-icon name="md-calendar"></ion-icon>
+    <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="dateEnd"></ion-datetime>
+  </ion-item>
+  <button ion-button icon-start class="btn" (click)="getDate()">
+    <ion-icon name="md-checkmark-circle-outline"></ion-icon>&nbsp;
+    ยืนยัน
+  </button>
+  <ion-card>
+    <div style="display:block;" *ngIf='doughnutChartData'>
+      <canvas baseChart [data]='doughnutChartData' [labels]='doughnutChartLabels' [chartType]='doughnutChartType'>
+      </canvas>
+    </div>
+    <div *ngIf='showAll' align='center'>{{dateStart}} : {{count}} | {{dateEnd}} : {{count1}}</div>
+    <div *ngIf='showDateS' align='center'>{{dateStart}} : {{count}}</div>
+    <div *ngIf='showDateE' align='center'>{{dateEnd}} : {{count1}}</div>
+    <div *ngIf='showToday' align='center'>{{today1}} : {{count2}}</div>
+  </ion-card>
+</ion-content>

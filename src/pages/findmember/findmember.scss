@@ -1,0 +1,49 @@
+page-findmember {
+    .grid-basic-page {
+
+        ion-col div {
+          background-color: #f0f5ff;
+          border: 1px solid #e6e9ee;
+          border-radius: 2px;
+          padding: 5px;
+          text-align: center;
+        }
+      
+        p {
+          padding: 10px 0 0 10px !important;
+          margin: 0;
+        }
+      
+      }
+      .font{
+        color: rgb(255, 255, 255);
+    }
+    .bg{
+      background: #1FA2FF;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .btn {
+      background-color: rgb(32, 155, 138);
+    }
+    
+    .btn:hover {
+      background-color: rgb(77, 247, 224);
+    }
+    
+    .btn:focus {
+      background-color: rgb(51, 146, 158);
+    
+      /* The outline parameter surpresses the border
+      color / outline when focused */
+      outline: 1;
+    }
+    
+    .btn:active {
+      background-color: #12D8FA;
+    }
+    .ra{
+      border-radius: 20px;
+      margin-top: 10px;
+  }
+}
